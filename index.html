@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buka Kamera Xiaomi</title>
+
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#4f46e5,#06b6d4);
+}
+
+.card{
+background:white;
+padding:32px;
+border-radius:24px;
+text-align:center;
+width:300px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+button{
+margin-top:20px;
+padding:15px 24px;
+border:none;
+border-radius:999px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h2>📸 Buka Kamera Xiaomi</h2>
+
+<button onclick="openCamera()">
+BUKA KAMERA
+</button>
+</div>
+
+<script>
+function openCamera(){
+window.location.href =
+'intent://#Intent;action=android.media.action.STILL_IMAGE_CAMERA;end';
+}
+</script>
+
+</body>
+</html>
